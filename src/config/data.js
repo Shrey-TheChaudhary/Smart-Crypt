@@ -15,4 +15,12 @@ export const chartDays = [
       label: "1 Year",
       value: 365,
     },
+    {
+      label: "5 Year",
+      value: 1840,
+    },
+    {
+      label: "10 Year",
+      value: 3650,
+    },
   ];
