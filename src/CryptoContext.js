@@ -42,6 +42,7 @@ const CryptoContext = ({ children }) => {
     onAuthStateChanged(auth, (user) => {
       if (user) setUser(user);
       else setUser(null);
+      console.log(user)
     });
   }, []);
 
