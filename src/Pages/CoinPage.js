@@ -14,6 +14,8 @@ import { numberWithCommas } from "../components/CoinsTable";
 import { CryptoState } from "../CryptoContext";
 import { doc, setDoc } from "firebase/firestore";
 import { db } from "../firebase";
+import alert from "../components/Alert"
+
 
 const CoinPage = () => {
   const { id } = useParams();
@@ -138,8 +140,8 @@ const CoinPage = () => {
         <img
           src={coin?.image.large}
           alt={coin?.name}
-          height="200"
-          style={{ marginBottom: 20 }}
+          height="220"
+          style={{ marginBottom: 25}}
         />
         <Typography variant="h3" className={classes.heading}>
           {coin?.name}

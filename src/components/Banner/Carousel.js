@@ -62,7 +62,7 @@ const Carousel = () => {
             }}
           >
             {profit && "+"}
-            {coin?.price_change_percentage_24h?.toFixed(2)}%
+            {coin?.price_change_percentage_24h?.toFixed(3)}%
           </span>
         </span>
         <span style={{ fontSize: 22, fontWeight: 500 }}>
@@ -86,8 +86,8 @@ const Carousel = () => {
       <AliceCarousel
         mouseTracking
         infinite
-        autoPlayInterval={1000}
-        animationDuration={1500}
+        autoPlayInterval={800}
+        animationDuration={1200}
         disableDotsControls
         disableButtonsControls
         responsive={responsive}

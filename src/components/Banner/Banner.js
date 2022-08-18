@@ -14,13 +14,13 @@ const useStyles = makeStyles((theme) => ({
   },
   tagline: {
     display: "flex",
-    height: "40%",
+    height: "30%",
     flexDirection: "column",
     justifyContent: "center",
     textAlign: "center",
   },
   carousel: {
-    height: "50%",
+    height: "60%",
     display: "flex",
     alignItems: "center",
   },
@@ -37,7 +37,7 @@ function Banner() {
             variant="h2"
             style={{
               fontWeight: "bold",
-              marginBottom: 15,
+              marginBottom: 18,
               fontFamily: "Montserrat",
             }}
           >
@@ -46,7 +46,7 @@ function Banner() {
           <Typography
             variant="subtitle2"
             style={{
-              color: "darkgrey",
+              color: "#7e8078",
               textTransform: "capitalize",
               fontFamily: "Montserrat",
             }}

@@ -9,10 +9,9 @@ import {
 } from "react-router-dom";
 import CoinPage from "./Pages/CoinPage";
 import Header from "./components/Header";
-
 const useStyles = makeStyles(() => ({
   App: {
-    backgroundColor: "#14161a",
+    backgroundColor: "#14162a",
     color: "white",
     minHeight: "100vh",
   },

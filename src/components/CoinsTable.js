@@ -34,7 +34,7 @@ export default function CoinsTable() {
       backgroundColor: "#16171a",
       cursor: "pointer",
       "&:hover": {
-        backgroundColor: "#131111",
+        backgroundColor: "#131112",
       },
       fontFamily: "Montserrat",
     },
@@ -70,7 +70,7 @@ export default function CoinsTable() {
       <Container style={{ textAlign: "center" }}>
         <Typography
           variant="h4"
-          style={{ margin: 18, fontFamily: "Montserrat" }}
+          style={{ margin: 20, fontFamily: "Montserrat" }}
         >
           Cryptocurrency Prices by Market Cap
         </Typography>
@@ -82,7 +82,7 @@ export default function CoinsTable() {
         />
         <TableContainer component={Paper}>
           {loading ? (
-            <LinearProgress style={{ backgroundColor: "gold" }} />
+            <LinearProgress style={{ backgroundColor: "#FFF700" }} />
           ) : (
             <Table aria-label="simple table">
               <TableHead style={{ backgroundColor: "#EEBC1D" }}>

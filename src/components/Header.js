@@ -19,7 +19,7 @@ import UserSidebar from "./Authentication/UserSidebar";
 const useStyles = makeStyles((theme) => ({
   title: {
     flex: 1,
-    color: "gold",
+    color: "#FFF700",
     fontFamily: "Montserrat",
     fontWeight: "bold",
     cursor: "pointer",
@@ -61,8 +61,8 @@ function Header() {
               style={{ width: 85, height: 40 }}
               onChange={(e) => setCurrency(e.target.value)}
             >
-              <MenuItem value={"USD"}>USD</MenuItem>
               <MenuItem value={"INR"}>INR</MenuItem>
+              <MenuItem value={"USD"}>USD</MenuItem>
             </Select>
 
             {user ? <UserSidebar /> : <AuthModal />}
