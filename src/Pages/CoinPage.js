@@ -14,7 +14,7 @@ import { numberWithCommas } from "../components/CoinsTable";
 import { CryptoState } from "../CryptoContext";
 import { doc, setDoc } from "firebase/firestore";
 import { db } from "../firebase";
-import alert from "../components/Alert"
+
 
 
 const CoinPage = () => {
@@ -65,7 +65,7 @@ const CoinPage = () => {
 
       setAlert({
         open: true,
-        message: `${coin.name} Removed from the Watchlist !`,
+        message: `${coin.name} Removed from the Favourite !`,
         type: "success",
       });
     } catch (error) {
@@ -140,7 +140,7 @@ const CoinPage = () => {
         <img
           src={coin?.image.large}
           alt={coin?.name}
-          height="220"
+          height="200"
           style={{ marginBottom: 25}}
         />
         <Typography variant="h3" className={classes.heading}>
@@ -211,7 +211,7 @@ const CoinPage = () => {
               }}
               onClick={inWatchlist ? removeFromWatchlist : addToWatchlist}
             >
-              {inWatchlist ? "Remove from Watchlist" : "Add to Watchlist"}
+              {inWatchlist ? "Remove from Favourite " : "Add to Favourite 💗"}
             </Button>
           )}
         </div>

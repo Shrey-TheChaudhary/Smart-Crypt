@@ -107,7 +107,7 @@ export default function UserSidebar() {
 
       setAlert({
         open: true,
-        message: `${coin.name} Removed from the Watchlist !`,
+        message: `${coin.name} Removed from the Favourite !`,
         type: "success",
       });
     } catch (error) {
@@ -160,7 +160,7 @@ export default function UserSidebar() {
                 </span>
                 <div className={classes.watchlist}>
                   <span style={{ fontSize: 15, textShadow: "0 0 5px black" }}>
-                    Watchlist
+                   Favourites
                   </span>
                   {coins.map((coin) => {
                     if (watchlist.includes(coin.id))
