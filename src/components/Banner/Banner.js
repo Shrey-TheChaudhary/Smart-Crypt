@@ -3,7 +3,10 @@ import Carousel from "./Carousel";
 
 const useStyles = makeStyles((theme) => ({
   banner: {
-    backgroundImage: "url(./banner2.jpg)",
+    backgroundImage: "url(./b4.jpg)",
+    backgroundrepeat: "no-repeat",
+    backgroundposition: "center",
+    backgroundSize:"cover",
   },
   bannerContent: {
     height: 400,
@@ -36,6 +39,7 @@ function Banner() {
           <Typography
             variant="h2"
             style={{
+              color:"#7fffd4",
               fontWeight: "bold",
               marginBottom: 18,
               fontFamily: "Montserrat",
@@ -46,9 +50,10 @@ function Banner() {
           <Typography
             variant="subtitle2"
             style={{
-              color: "#7e8078",
+              color: "#8f9c84",
               textTransform: "capitalize",
               fontFamily: "Montserrat",
+              fontWeight: "bold"
             }}
           >
             Get all the Info regarding your favorite Crypto Currency

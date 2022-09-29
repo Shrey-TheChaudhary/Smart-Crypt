@@ -132,7 +132,7 @@ const CoinPage = () => {
 
   const classes = useStyles();
 
-  if (!coin) return <LinearProgress style={{ backgroundColor: "gold" }} />;
+  if (!coin) return <LinearProgress style={{ backgroundColor: "#48d1cc" }} />;
 
   return (
     <div className={classes.container}>
@@ -207,11 +207,11 @@ const CoinPage = () => {
               style={{
                 width: "100%",
                 height: 40,
-                backgroundColor: inWatchlist ? "#ff0000" : "#EEBC1D",
+                backgroundColor: inWatchlist ? "#ff6600" : "#7fffd4 ",
               }}
               onClick={inWatchlist ? removeFromWatchlist : addToWatchlist}
             >
-              {inWatchlist ? "Remove from Favourite " : "Add to Favourite 💗"}
+              {inWatchlist ? "Remove from Favourite " : "Add to Favourite "}
             </Button>
           )}
         </div>

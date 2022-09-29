@@ -3,7 +3,6 @@ import { useState } from "react";
 import { CryptoState } from "../../CryptoContext";
 import { auth } from "../../firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import alert from "../Alert"
 
 const Login = ({ handleClose }) => {
   const [email, setEmail] = useState("");

@@ -28,7 +28,7 @@ const CryptoContext = ({ children }) => {
           console.log(coin.data().coins);
           setWatchlist(coin.data().coins);
         } else {
-          console.log("No Items in Watchlist");
+          console.log("No Items in Favourites");
         }
       });
 
