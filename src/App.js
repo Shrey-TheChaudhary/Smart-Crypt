@@ -33,6 +33,7 @@ function App() {
     </Routes>
     <hr/>
     <Footer/>
+
       </div>
     </BrowserRouter>
    

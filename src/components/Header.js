@@ -4,7 +4,6 @@ import {
   MenuItem,
   Select,
   Toolbar,
-  Typography,
 } from "@material-ui/core";
 import {
   createTheme,
@@ -19,9 +18,6 @@ import UserSidebar from "./Authentication/UserSidebar";
 const useStyles = makeStyles((theme) => ({
   title: {
     flex: 1,
-    color: "#ff6600",
-    fontFamily: "Montserrat",
-    fontWeight: "bold",
     cursor: "pointer",
   },
 }));
@@ -46,13 +42,13 @@ function Header() {
       <AppBar color="transparent" position="static">
         <Container>
           <Toolbar>
-            <Typography
+            <img
               onClick={() => navigate(`/`)}
-              variant="h6"
+              src="./smartcrypt.jpg"
+              alt="smartcrypt"
               className={classes.title}
             >
-              Crisp Crypt
-            </Typography>
+            </img>
             <Select
               variant="outlined"
               labelId="demo-simple-select-label"

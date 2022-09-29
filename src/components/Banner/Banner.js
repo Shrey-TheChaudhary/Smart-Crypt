@@ -45,7 +45,7 @@ function Banner() {
               fontFamily: "Montserrat",
             }}
           >
-            Crisp Crypt
+            Smart Crypt
           </Typography>
           <Typography
             variant="subtitle2"
