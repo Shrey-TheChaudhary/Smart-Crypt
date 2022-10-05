@@ -15,7 +15,6 @@ const Alert = () => {
   };
 
   return (
-    <div>
     <Snackbar
       open={alert.open}
       autoHideDuration={3000}
@@ -30,7 +29,6 @@ const Alert = () => {
         {alert.message}
       </MuiAlert>
     </Snackbar>
-    </div>
   );
 };
 

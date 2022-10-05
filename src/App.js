@@ -31,10 +31,9 @@ function App() {
       <Route exact path="/" element={<Homepage />} />
       <Route exact path="/coins/:id" element={<CoinPage />} />
     </Routes>
-    <hr/>
-    <Footer/>
-
+    
       </div>
+      <Footer/>
     </BrowserRouter>
    
    </>

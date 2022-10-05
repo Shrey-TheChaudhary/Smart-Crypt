@@ -4,6 +4,7 @@ import {
   MenuItem,
   Select,
   Toolbar,
+  Typography
 } from "@material-ui/core";
 import {
   createTheme,
@@ -14,14 +15,16 @@ import { useNavigate } from "react-router-dom";
 import { CryptoState } from "../CryptoContext";
 import AuthModal from "./Authentication/AuthModal";
 import UserSidebar from "./Authentication/UserSidebar";
-
+import React from "react"
 const useStyles = makeStyles((theme) => ({
   title: {
     flex: 1,
+    color: "#ff6600",
+    fontFamily: "Montserrat",
+    fontWeight: "bold",
     cursor: "pointer",
   },
 }));
-
 const darkTheme = createTheme({
   palette: {
     primary: {
@@ -40,21 +43,25 @@ function Header() {
   return (
     <ThemeProvider theme={darkTheme}>
       <AppBar color="transparent" position="static">
-        <Container>
-          <Toolbar>
-            <img
+        <Container >
+          <Toolbar >
+          <Typography
               onClick={() => navigate(`/`)}
-              src="./smartcrypt.jpg"
-              alt="smartcrypt"
+              variant="h6"
               className={classes.title}
             >
-            </img>
+              Crisp Crypt
+            </Typography>
+          
+
+              
+              
             <Select
               variant="outlined"
               labelId="demo-simple-select-label"
               id="demo-simple-select"
               value={currency}
-              style={{ width: 85, height: 40 }}
+              style={{ width: 85, height: 40}}
               onChange={(e) => setCurrency(e.target.value)}
             >
               <MenuItem value={"INR"}>INR</MenuItem>
