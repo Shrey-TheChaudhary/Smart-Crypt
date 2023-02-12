@@ -4,7 +4,7 @@ import { CryptoState } from "../../CryptoContext";
 import { auth } from "../../firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
 
-const Login = ({ handleClose }) => {
+function Login({ handleClose }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -54,16 +54,14 @@ const Login = ({ handleClose }) => {
         label="Enter Email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        fullWidth
-      />
+        fullWidth />
       <TextField
         variant="outlined"
         label="Enter Password"
         type="password"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
-        fullWidth
-      />
+        fullWidth />
       <Button
         variant="contained"
         size="large"
@@ -74,6 +72,6 @@ const Login = ({ handleClose }) => {
       </Button>
     </Box>
   );
-};
+}
 
 export default Login;
